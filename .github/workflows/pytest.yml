@@ -1,0 +1,19 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull Docker image from Docker Hub
+        run: docker pull rawanalanazi/flask-test:latest
+
+      - name: Run Docker container and execute pytest
+        run: docker run --rm rawanalanazi/flask-test:latest pytest
