@@ -11,6 +11,9 @@
 2. **Navigate to the Project Directory:**
    ```bash
    cd flask-github-actions
+
+
+   
    ```
 
 3. **Set Up a Virtual Environment:**
