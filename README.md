@@ -10,6 +10,8 @@
 
 2. **Navigate to the Project Directory:**
    ```bash
+
+   
    cd flask-github-actions
    ```
 
